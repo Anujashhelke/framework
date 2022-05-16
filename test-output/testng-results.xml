@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37893" started-at="2022-05-16T01:38:02 IST" finished-at="2022-05-16T01:38:40 IST">
+  <suite name="Default suite" duration-ms="86207" started-at="2022-05-16T22:42:39 IST" finished-at="2022-05-16T22:44:05 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37893" started-at="2022-05-16T01:38:02 IST" finished-at="2022-05-16T01:38:40 IST">
-      <class name="runner.TestExecution3">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:runner.TestExecution3@436e852b]" name="setUp" is-config="true" duration-ms="5458" started-at="2022-05-16T01:38:02 IST" finished-at="2022-05-16T01:38:07 IST">
+    <test name="Default test" duration-ms="86207" started-at="2022-05-16T22:42:39 IST" finished-at="2022-05-16T22:44:05 IST">
+      <class name="runner.TestExecution8">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:runner.TestExecution8@4abdb505]" name="setUp" is-config="true" duration-ms="7807" started-at="2022-05-16T22:42:39 IST" finished-at="2022-05-16T22:42:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:runner.TestExecution3@436e852b]" name="basePageNavigation" duration-ms="32192" started-at="2022-05-16T01:38:07 IST" finished-at="2022-05-16T01:38:40 IST">
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:runner.TestExecution8@4abdb505]" name="basePageNavigation" duration-ms="77439" started-at="2022-05-16T22:42:46 IST" finished-at="2022-05-16T22:44:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="FAIL" signature="close()[pri:0, instance:runner.TestExecution3@436e852b]" name="close" is-config="true" duration-ms="0" started-at="2022-05-16T01:38:40 IST" finished-at="2022-05-16T01:38:40 IST">
+        <test-method status="FAIL" signature="close()[pri:0, instance:runner.TestExecution8@4abdb505]" name="close" is-config="true" duration-ms="0" started-at="2022-05-16T22:44:04 IST" finished-at="2022-05-16T22:44:04 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -29,11 +29,9 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
@@ -53,7 +51,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- runner.TestExecution3 -->
+      </class> <!-- runner.TestExecution8 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

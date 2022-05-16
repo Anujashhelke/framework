@@ -2,6 +2,7 @@ package runner;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 
@@ -37,5 +38,9 @@ import utility.Snapshot;
 			h.getUserResponse();
 
 }
+	@AfterClass
+	public void close() {
+		driver.close();
+	}
 	
 	}

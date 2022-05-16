@@ -3,6 +3,7 @@ package runner;
 
 	import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import pageobject.GiftCollectionPageObject;
@@ -40,7 +41,10 @@ import pageobject.GiftCollectionPageObject;
 				gift.insertDate();
 				gift.clickNext();
 				gift.sendText("anuja","avni","avni@gmail.com","anuja@gmail.com","657657");
-				
-
-}
+				gift.clickConfirm();
+     }
+		@AfterClass
+		public void close() {
+			driver.close();
+		}
 		}

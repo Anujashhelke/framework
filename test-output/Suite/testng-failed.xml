@@ -10,6 +10,13 @@
           <include name="basePageNavigation"/>
         </methods>
       </class> <!-- runner.TestExecution4 -->
+      <class name="runner.TestExecution1">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- runner.TestExecution1 -->
       <class name="runner.TestExecution3">
         <methods>
           <include name="setUp"/>

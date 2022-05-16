@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import pageobject.Homepage;
 import reusable.WebDriverHelper;
@@ -20,7 +21,7 @@ import utility.Snapshot;
 public class TestExecution1 extends BaseClass {
 	public ConfigRead read;
 	public static ExtentReport extent;
-	
+	public ExtentTest test;
 	Snapshot snap;
 	String path;
 	public WebDriverHelper helper;
@@ -32,7 +33,7 @@ public class TestExecution1 extends BaseClass {
 		driver.get("https://www.urbanladder.com");
 		Homepage h=new Homepage(driver);
        extent.createReport();
-		extent.createTest("home page 1");
+		test=extent.createTest("home page 1");
 		snap=new Snapshot();
 		extent.logPass("successfully launched");
 		
@@ -52,6 +53,10 @@ public class TestExecution1 extends BaseClass {
 		extent.logPass(path);
 		//h.textContain();
 		
+	}
+	@AfterClass
+	public void close() {
+		driver.close();
 	}
 	
 	}

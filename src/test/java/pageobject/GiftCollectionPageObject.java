@@ -67,9 +67,15 @@ public class GiftCollectionPageObject {
 		helper.sentText(GiftCollectionUi.receiprntmail, string3);
 		helper.sentText(GiftCollectionUi.customerMail, string4);
 		helper.sentText(GiftCollectionUi.phone, string5);
-		helper.click(GiftCollectionUi.next);
 		
 		
+		
+		
+	}
+
+	public void clickConfirm() {
+		helper.clickExecuter(GiftCollectionUi.next);
+		log.info("clicked");
 		
 	}
 

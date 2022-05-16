@@ -5,12 +5,12 @@
     <classes>
       
 <class name="runner.TestExecution2"/>
+ 
 <class name="runner.TestExecution1"/>
+
 <class name="runner.TestExecution3"/>
+
 <class name="runner.TestExecution4"/>
-     
-     
-     
-    </classes>
+</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -16,7 +16,7 @@ public class GiftCollectionUi {
 	public static By receiprntmail=By.xpath("//input[@name='recipient_email']");
 	public static By customerMail=By.xpath("//input[@name='customer_email']");
 	public static By phone=By.xpath("//input[@name='customer_mobile_number']");
-	public static By confirm=By.xpath("//button[text()='Confirm']");
+	public static By confirm=By.xpath("//section[@class='_14QEd _2X0VN']//button");
 	
 
 

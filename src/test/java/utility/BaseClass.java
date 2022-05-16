@@ -29,7 +29,7 @@ public class BaseClass {
 		
 		
 	}
-	@AfterClass
+	@AfterTest
 	public void close() {
 	       
 			extent=new ExtentReport();

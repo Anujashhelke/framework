@@ -18,6 +18,8 @@ import utility.BaseClass;
 public class WebDriverHelper extends BaseClass{
 	
 
+private boolean String;
+
 public void click(By popUp) {
 	
 		
@@ -39,7 +41,7 @@ public void click(By popUp) {
 	}
 
 	public void textContains(By getText, String string) {
-		boolean str=driver.findElement(getText).getText().contains(string);
+		boolean str= driver.findElement(getText).getText().contains(string);
 		if(str==true) {
 			System.out.println("text is present"+string);
 			 System.out.print(driver.getTitle());
@@ -130,4 +132,35 @@ public void click(By popUp) {
 	}
 
 }
-}
+
+	public void clickExecuter(By next) {
+		WebElement confirm=driver.findElement(next);
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click", confirm);
+		
+		
+	}
+
+
+	public void ErrorMassage(By requiredField) {
+		
+		Iterator<WebElement>it=driver.findElements(requiredField).iterator();
+		while(it.hasNext()) {
+			System.out.print(it.next().getText());
+		}
+	}
+
+	public void getTitle(String string) {
+		String title=driver.getTitle();
+		if(title.equals(string)) {
+			 System.out.println("we are on right page");
+		}
+		
+	}
+
+	public void selectLink(By click) {
+		driver.findElement(click).click();
+		}
+		
+	}
+

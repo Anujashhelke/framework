@@ -35,6 +35,10 @@ public class ConfigRead {
 		String path=properties.getProperty("driver");
 		return path;
 	}
+	public String getExcelPath() {
+		String fpath=properties.getProperty("filepath");
+		return fpath;
+	}
 
 
 
