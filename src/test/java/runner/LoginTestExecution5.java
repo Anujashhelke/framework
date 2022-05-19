@@ -46,7 +46,7 @@ import utility.ExtentReport;
 					l.submit();
 					Thread.sleep(2000);
 					l.errorGet();
-					Thread.sleep(2000);
+					//Thread.sleep(2000);
 					l.submit();
 					l.requiredField();
 					

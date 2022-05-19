@@ -34,13 +34,21 @@ import pageobject.GiftCollectionPageObject;
 				snap=new Snapshot();
 				extent.logPass("successfully launched");
 				gift.clickOnGift();
+				Thread.sleep(3000);
 				gift.hover();
+				Thread.sleep(3000);
 				gift.clickOnChoose();
+				Thread.sleep(3000);
 				gift.getText();
+				Thread.sleep(3000);
 				gift.insertAccount();
+				Thread.sleep(3000);
 				gift.insertDate();
+				Thread.sleep(3000);
 				gift.clickNext();
+				Thread.sleep(3000);
 				gift.sendText("anuja","avni","avni@gmail.com","anuja@gmail.com","657657");
+				Thread.sleep(3000);
 				gift.clickConfirm();
      }
 		@AfterClass

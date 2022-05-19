@@ -51,6 +51,7 @@ public class LoginPage {
 			}
 
 			public void submit() {
+				helper.explicitWaitOfvisibilityOfElementLocated(LoginUi.submit, 50);
 				helper.click(LoginUi.submit);
 			}
 

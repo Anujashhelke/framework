@@ -33,6 +33,7 @@ public class StoresPageObject {
 	}
 
 	public void clickOnviewDetails() {
+		helper.explicitWaitOfvisibilityOfElementLocated(StoresUi.viewDetails, 50);
 		helper.click(StoresUi.viewDetails);
 		
 	}
@@ -41,12 +42,21 @@ public class StoresPageObject {
 
 
 	public void clickOnStores() {
+		//helper.explicitWaitOfvisibilityOfElementLocated(StoresUi.viewDetails, 50);
 		helper.click(StoresUi.store);
 		
 	}
 
 
 	public void clickOnLocation() {
+		helper.explicitWaitOfvisibilityOfElementLocated(StoresUi.click, 50);
+		helper.click(StoresUi.click);
+		
+	}
+
+
+	public void clickOnLocation1() {
+		helper.explicitWaitOfvisibilityOfElementLocated(StoresUi.viewDetails, 50);
 		helper.click(StoresUi.click);
 		
 	}

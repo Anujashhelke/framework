@@ -5,6 +5,7 @@ package runner;
 	import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import pageobject.HelpCenter;
@@ -47,10 +48,10 @@ import pageobject.LoginPage;
 
 
 				}
-				////@AfterClass
-				//public void close() {
-				//	driver.close();
-				///}
+				@AfterMethod
+				public void close() {
+					driver.close();
+				}
 				}
 
 

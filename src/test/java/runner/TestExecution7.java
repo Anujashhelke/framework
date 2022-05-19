@@ -35,14 +35,18 @@ import pageobject.StoresPageObject;
 					snap=new Snapshot();
 					extent.logPass("successfully launched");
 					h.hoverOndecor();
-					Thread.sleep(3000);
+					//Thread.sleep(3000);
 					h.clickOnDoormat();
 					h.closePopup();
 					h.hoverOnRecommended();
-					//h.getLocation();
-					h.clickOnArrival();
+					
+					//Thread.sleep(3000);
+					//h.clickOnArrival();
+					Thread.sleep(3000);
+					h.clickOnProduct();
 					Thread.sleep(2000);
-					h.getdimension("Urban Ladder");
+					h.textContains("Kyra Door Mat");
+					Thread.sleep(3000);
 
 		}	
 			@AfterClass

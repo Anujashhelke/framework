@@ -3,6 +3,7 @@ package runner;
 import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import pageobject.HomePage2;
@@ -35,19 +36,30 @@ import utility.Snapshot;
 			h.hover();
 			Thread.sleep(3000);
 			h.clickOnLaptop();
+			Thread.sleep(3000);
 			h.closePopup();
+			Thread.sleep(3000);
 			h.hoverOnProduct();
+			Thread.sleep(3000);
 			h.clickOnAdd();
+			Thread.sleep(3000);
 			h.addToCart();
+			Thread.sleep(3000);
 			h.quantity();
+			Thread.sleep(3000);
 			h.Price();
+			Thread.sleep(3000);
 			h.checkout();
+			Thread.sleep(3000);
 			h.addDetails();
+			Thread.sleep(3000);
+			extent.endReport();
 			
 
 }
-	@AfterClass
-	public void close() {
+	@AfterMethod
+	public void quite() {
 		driver.close();
 	}
 	}
+

@@ -23,27 +23,6 @@ public class Snapshot {
 		
 		
 }
-		/*WebDriver driver=BaseClass.driver;
-		public String takeSnapshot(WebDriver driver2) {
-			TakesScreenshot sshot=(TakesScreenshot)driver;
-			File src=sshot.getScreenshotAs(OutputType.FILE);
-			String timeStamp=System.getProperty("user.dir")+"/screenshots/uiic"+getCurrentDateTime()+"screenshot.png";
-			File dest=new File(timeStamp);
-			try {
-				FileUtils.copyFile(src,dest);
-			}
-			catch(IOException e) {
-				e.printStackTrace();
-			}
-			return timeStamp;
-		}
-		private String getCurrentDateTime() {
-			SimpleDateFormat sdf=new SimpleDateFormat("MM/dd/yyy HH:mm:ss");
-			Date d=new Date();
-			return sdf.format(d);
-		}*/
 		
-
-	
 
 }

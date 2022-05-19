@@ -3,6 +3,7 @@ package runner;
 import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -30,11 +31,13 @@ public class TestExecution1 extends BaseClass {
 		read=new ConfigRead();
 		extent =new ExtentReport();
 		driver=setUp();
-		driver.get("https://www.urbanladder.com");
+		driver.get(read.getUrl());
 		Homepage h=new Homepage(driver);
-       extent.createReport();
-		test=extent.createTest("home page 1");
+		 extent.createReport();
+		extent.createTest(getClass().getSimpleName());
 		snap=new Snapshot();
+		
+		path=snap.takeSnapshot(driver);
 		extent.logPass("successfully launched");
 		
 		Thread.sleep(3000);
@@ -49,13 +52,14 @@ public class TestExecution1 extends BaseClass {
 		h.closePopup();
 		Thread.sleep(3000);
 		h.verifyProduct();
-		path=snap.takeSnapshot(driver);
 		extent.logPass(path);
 		//h.textContain();
+		extent.endReport();
 		
 	}
-	@AfterClass
-	public void close() {
+	@AfterMethod
+	public void closeTest() {
+		close();
 		driver.close();
 	}
 	

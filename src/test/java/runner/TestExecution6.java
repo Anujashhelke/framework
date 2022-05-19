@@ -35,13 +35,18 @@ import reusable.WebDriverHelper;
 				extent.createTest("home page 6");
 				snap=new Snapshot();
 				extent.logPass("successfully launched");
+				Thread.sleep(3000);
 				h.clickOnStores();
+				Thread.sleep(3000);
 				h.textContain("Stores");
+				Thread.sleep(3000);
 				h.clickOnviewDetails();
+				Thread.sleep(3000);
 				//h.getLocation();
 				h.clickOnLocation();
 				Thread.sleep(2000);
 				h.getTitle("Urban Ladder");
+				Thread.sleep(3000);
 
 	}	
 		@AfterClass

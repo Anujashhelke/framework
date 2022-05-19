@@ -33,9 +33,13 @@ import utility.Snapshot;
 			snap=new Snapshot();
 			extent.logPass("successfully launched");
 			h.clickOnLink();
+			Thread.sleep(3000);
 			h.textContain("TERMS OF SHIPPING AND DELIVERY");
+			Thread.sleep(3000);
 			h.stories();
+			Thread.sleep(3000);
 			h.getUserResponse();
+			Thread.sleep(3000);
 
 }
 	@AfterClass

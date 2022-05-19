@@ -136,7 +136,7 @@ public void click(By popUp) {
 	public void clickExecuter(By next) {
 		WebElement confirm=driver.findElement(next);
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click", confirm);
+		js.executeScript("arguments[0].click();", confirm);
 		
 		
 	}
@@ -161,6 +161,33 @@ public void click(By popUp) {
 	public void selectLink(By click) {
 		driver.findElement(click).click();
 		}
+
+	public void CheckBox(By check) {
+		
+			driver.findElement(check).click();
+		
+		
+		
+	}
+
+	public void clickExe(By doormat) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();",doormat);
+		
+	}
+
+	public void explicitWaitOfElementToBeClickable(By new1, int i) {
+		WebDriverWait wait=new WebDriverWait(driver,i);
+		wait.until(ExpectedConditions.elementToBeClickable(new1));
+		
+	}
+
+	public void getPageSource( String string2) {
+		if(driver.getPageSource().contains(string2)) {
+			 System.out.println("text present"+string2);
+		}
+		
+	}
 		
 	}
 

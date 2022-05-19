@@ -55,23 +55,39 @@ import uistore.StoresUi;
 
 
 					public void hoverOnRecommended() {
-						helper.explicitWaitOfvisibilityOfElementLocated(DecorUi.recommended, 50);
+						//helper.explicitWaitOfvisibilityOfElementLocated(DecorUi.recommended, 50);
 						helper.action(DecorUi.recommended);
+						log.info("successfully hovered");
 						
 					}
 
 
 
-					public void clickOnArrival() {
-						helper.click(DecorUi.New);
+					//public void clickOnArrival() {
+						//helper.explicitWaitOfElementToBeClickable(DecorUi.New, 30);
+					//	helper.click(DecorUi.New);
 						
-					}
+					//}
 
 
 
 					public void getdimension(String string) {
 						helper.explicitWaitOfvisibilityOfElementLocated(DecorUi.dimensions, 50);
 					helper.getText(DecorUi.dimensions);
+						
+					}
+
+
+
+					public void clickOnProduct() {
+					helper.click(DecorUi.mat);
+						
+					}
+
+
+
+					public void textContains(String string) {
+						helper.getPageSource(string);
 						
 					}
 					
