@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="runner.TestExecution4"/>
+      <class name="runner.TestExecution2"/>
+      <class name="runner.TestExecution3"/>
+      <class name="runner.TestExecution1"/>
+      <class name="utility.BaseClass"/>
+      <class name="runner.TextExecution9"/>
+      <class name="runner.TestExecution8"/>
+      <class name="runner.LoginTestExecution5"/>
+      <class name="runner.TestExecution6"/>
+      <class name="runner.TestExecution7"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
